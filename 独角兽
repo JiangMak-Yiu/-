@@ -15,9 +15,9 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: ☯香港1♡♥♡♥, type: ss, server: gy1.7kj.lol, port: 47174, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
-        - { name: ☯香港2♡♥♡♥, type: ss, server: gy2.7kj.lol, port: 47174, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
-        - { name: ☯香港3♡♥♡♥, type: ss, server: gy3.7kj.lol, port: 47174, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
+    - { name: sm香港1♡♥♡♥, type: ss, server: gy1.7kj.lol, port: 47174, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
+        - { name: sm香港2♡♥♡♥, type: ss, server: gy2.7kj.lol, port: 47174, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
+        - { name: sm香港3♡♥♡♥, type: ss, server: gy3.7kj.lol, port: 47174, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
         - { name: 加拿大1♡♥♡♥, type: ss, server: gy1.7kj.lol, port: 47169, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
         - { name: 加拿大2♡♥♡♥, type: ss, server: gy2.7kj.lol, port: 47169, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
         - { name: 加拿大3♡♥♡♥, type: ss, server: gy3.7kj.lol, port: 47169, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
@@ -31,9 +31,9 @@ proxies:
         - { name: 英国2♡♥♡♥, type: ss, server: gy2.7kj.lol, port: 47173, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
         - { name: 英国3♡♥♡♥, type: ss, server: gy2.7kj.lol, port: 47173, cipher: chacha20-ietf-poly1305, password: e685013e-7f22-41d3-91d7-b68583f63401, udp: true }
         proxy-groups:
-        - { name: 江江, type: select, proxies: [自动选择, 故障转移, ☯香港1♡♥♡♥, ☯香港2♡♥♡♥, ☯香港3♡♥♡♥, 加拿大1♡♥♡♥, 加拿大2♡♥♡♥, 加拿大3♡♥♡♥, 印度1♡♥♡♥, 印度2♡♥♡♥, 印度3♡♥♡♥, 德国1♡♥♡♥, 德国2♡♥♡♥, 德国3♡♥♡♥, 英国1♡♥♡♥, 英国2♡♥♡♥, 英国3♡♥♡♥] }
-        - { name: 自动选择, type: url-test, proxies: [☯香港1♡♥♡♥, ☯香港2♡♥♡♥, ☯香港3♡♥♡♥, 加拿大1♡♥♡♥, 加拿大2♡♥♡♥, 加拿大3♡♥♡♥, 印度1♡♥♡♥, 印度2♡♥♡♥, 印度3♡♥♡♥, 德国1♡♥♡♥, 德国2♡♥♡♥, 德国3♡♥♡♥, 英国1♡♥♡♥, 英国2♡♥♡♥, 英国3♡♥♡♥], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-        - { name: 故障转移, type: fallback, proxies: [☯香港1♡♥♡♥, ☯香港2♡♥♡♥, ☯香港3♡♥♡♥, 加拿大1♡♥♡♥, 加拿大2♡♥♡♥, 加拿大3♡♥♡♥, 印度1♡♥♡♥, 印度2♡♥♡♥, 印度3♡♥♡♥, 德国1♡♥♡♥, 德国2♡♥♡♥, 德国3♡♥♡♥, 英国1♡♥♡♥, 英国2♡♥♡♥, 英国3♡♥♡♥], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+        - { name: 江江, type: select, proxies: [自动选择, 故障转移, sm香港1♡♥♡♥, sm香港2♡♥♡♥, sm香港3♡♥♡♥, 加拿大1♡♥♡♥, 加拿大2♡♥♡♥, 加拿大3♡♥♡♥, 印度1♡♥♡♥, 印度2♡♥♡♥, 印度3♡♥♡♥, 德国1♡♥♡♥, 德国2♡♥♡♥, 德国3♡♥♡♥, 英国1♡♥♡♥, 英国2♡♥♡♥, 英国3♡♥♡♥] }
+        - { name: 自动选择, type: url-test, proxies: [sm香港1♡♥♡♥, sm香港2♡♥♡♥, sm香港3♡♥♡♥, 加拿大1♡♥♡♥, 加拿大2♡♥♡♥, 加拿大3♡♥♡♥, 印度1♡♥♡♥, 印度2♡♥♡♥, 印度3♡♥♡♥, 德国1♡♥♡♥, 德国2♡♥♡♥, 德国3♡♥♡♥, 英国1♡♥♡♥, 英国2♡♥♡♥, 英国3♡♥♡♥], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+        - { name: 故障转移, type: fallback, proxies: [sm香港1♡♥♡♥, sm香港2♡♥♡♥, sm香港3♡♥♡♥, 加拿大1♡♥♡♥, 加拿大2♡♥♡♥, 加拿大3♡♥♡♥, 印度1♡♥♡♥, 印度2♡♥♡♥, 印度3♡♥♡♥, 德国1♡♥♡♥, 德国2♡♥♡♥, 德国3♡♥♡♥, 英国1♡♥♡♥, 英国2♡♥♡♥, 英国3♡♥♡♥], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
         rules:
         - 'DOMAIN,cloud.anyijc.top,DIRECT'
         - 'DOMAIN-SUFFIX,services.googleapis.cn,江江'
@@ -54,7 +54,7 @@ proxies:
         - 'DOMAIN-SUFFIX,apps.apple.com,江江'
         - 'DOMAIN-SUFFIX,blobstore.apple.com,江江'
         - 'DOMAIN,cvws.icloud-content.com,江江'
-        - 'DOMAIN-SUFFIX,☯static.com,DIRECT'
+        - 'DOMAIN-SUFFIX,smstatic.com,DIRECT'
         - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
         - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
         - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
@@ -157,7 +157,7 @@ proxies:
         - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
         - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
         - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
-        - 'DOMAIN-SUFFIX,s☯dm.com,DIRECT'
+        - 'DOMAIN-SUFFIX,ssmdm.com,DIRECT'
         - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
         - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
         - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
