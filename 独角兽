@@ -17,7 +17,7 @@ dns:
 proxies:
     - { name: '速度自测', type: ss, server: 2.2.2.2, port: 1001, cipher: chacha20-ietf-poly1305, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86, udp: true }
         - { name: 4.15更新, type: ss, server: 2.2.2.2, port: 1001, cipher: chacha20-ietf-poly1305, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86, udp: true }
-        - { name: '未加 <$> ☯', type: ss, server: 2.2.2.2, port: 1001, cipher: chacha20-ietf-poly1305, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86, udp: true }
+        - { name: '未加 <$> 1', type: ss, server: 2.2.2.2, port: 1001, cipher: chacha20-ietf-poly1305, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86, udp: true }
         - { name: 节点死了联系江江, type: ss, server: 3.3.3.3, port: 1001, cipher: chacha20-ietf-poly1305, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86, udp: true }
         - { name: 节点优化, type: ss, server: 5.5.5.5, port: 1001, cipher: chacha20-ietf-poly1305, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86, udp: true }
         - { name: 'Hy2 Spain 01 $', server: 172.233.110.173, port: 49730, sni: hy2-spain01.startgenshin.online, up: 1024, down: 1024, skip-cert-verify: true, type: hysteria2, password: 9b1530d0-5c87-4879-ac53-3417f3a55b86 }
@@ -32,9 +32,9 @@ proxies:
         - { name: 'USA 13 (CDN) $', type: vmess, server: usa13.mukyu.asia, port: 80, uuid: 9b1530d0-5c87-4879-ac53-3417f3a55b86, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: usa13.mukyu.asia } }, ws-path: /, ws-headers: { Host: usa13.mukyu.asia } }
         - { name: 'Germeny 04 (CDN) $', type: vmess, server: germany04.mukyu.asia, port: 80, uuid: 9b1530d0-5c87-4879-ac53-3417f3a55b86, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: germany04.mukyu.asia } }, ws-path: /, ws-headers: { Host: germany04.mukyu.asia } }
         proxy-groups:
-        - { name: Xue Li Cloud, type: select, proxies: [自动选择, 故障转移, '速度自测', 4.15更新, '未加 <$> ☯', 节点死了联系江江, 节点优化, 'Hy2 Spain 01 $', 'Spain 01', 'South Korea 01 $', 'Brazil 01 $', 'U.K 01 $', 'Dubai 01 $', 'Hong Kong BGP 01 (CDN) $', 'Hong Kong BGP 03 (CDN) $', 'USA 01 (CDN) $', 'USA 13 (CDN) $', 'Germeny 04 (CDN) $'] }
-        - { name: 自动选择, type: url-test, proxies: ['速度自测', 4.15更新, '未加 <$> ☯', 节点死了联系江江, 节点优化, 'Hy2 Spain 01 $', 'Spain 01', 'South Korea 01 $', 'Brazil 01 $', 'U.K 01 $', 'Dubai 01 $', 'Hong Kong BGP 01 (CDN) $', 'Hong Kong BGP 03 (CDN) $', 'USA 01 (CDN) $', 'USA 13 (CDN) $', 'Germeny 04 (CDN) $'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-        - { name: 故障转移, type: fallback, proxies: ['速度自测', 4.15更新, '未加 <$> ☯', 节点死了联系江江, 节点优化, 'Hy2 Spain 01 $', 'Spain 01', 'South Korea 01 $', 'Brazil 01 $', 'U.K 01 $', 'Dubai 01 $', 'Hong Kong BGP 01 (CDN) $', 'Hong Kong BGP 03 (CDN) $', 'USA 01 (CDN) $', 'USA 13 (CDN) $', 'Germeny 04 (CDN) $'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+        - { name: Xue Li Cloud, type: select, proxies: [自动选择, 故障转移, '速度自测', 4.15更新, '未加 <$> 1', 节点死了联系江江, 节点优化, 'Hy2 Spain 01 $', 'Spain 01', 'South Korea 01 $', 'Brazil 01 $', 'U.K 01 $', 'Dubai 01 $', 'Hong Kong BGP 01 (CDN) $', 'Hong Kong BGP 03 (CDN) $', 'USA 01 (CDN) $', 'USA 13 (CDN) $', 'Germeny 04 (CDN) $'] }
+        - { name: 自动选择, type: url-test, proxies: ['速度自测', 4.15更新, '未加 <$> 1', 节点死了联系江江, 节点优化, 'Hy2 Spain 01 $', 'Spain 01', 'South Korea 01 $', 'Brazil 01 $', 'U.K 01 $', 'Dubai 01 $', 'Hong Kong BGP 01 (CDN) $', 'Hong Kong BGP 03 (CDN) $', 'USA 01 (CDN) $', 'USA 13 (CDN) $', 'Germeny 04 (CDN) $'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+        - { name: 故障转移, type: fallback, proxies: ['速度自测', 4.15更新, '未加 <$> 1', 节点死了联系江江, 节点优化, 'Hy2 Spain 01 $', 'Spain 01', 'South Korea 01 $', 'Brazil 01 $', 'U.K 01 $', 'Dubai 01 $', 'Hong Kong BGP 01 (CDN) $', 'Hong Kong BGP 03 (CDN) $', 'USA 01 (CDN) $', 'USA 13 (CDN) $', 'Germeny 04 (CDN) $'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
         rules:
         - 'DOMAIN,xueli.buzz,DIRECT'
         - 'DOMAIN-SUFFIX,services.googleapis.cn,Xue Li Cloud'
